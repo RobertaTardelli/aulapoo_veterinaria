@@ -6,6 +6,15 @@ public class Funcionario {
     private String funcao;
     private String endereco;
     private int telefone;
+    private int matricula;
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
 
     public String getNome() {
         return nome;
@@ -44,6 +53,14 @@ public class Funcionario {
     }
 
     public void setTelefone(int telefone) {
+        this.telefone = telefone;
+    }
+
+    public Funcionario() { // contrutor do funcionario
+        this.nome = nome; // atributos serao preenchidos ao criar o funcionario no application
+        this.cpf = cpf;
+        this.funcao = funcao;
+        this.endereco = endereco;
         this.telefone = telefone;
     }
 
