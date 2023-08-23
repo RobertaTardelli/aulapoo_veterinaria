@@ -1,21 +1,42 @@
 package com.poo.veterinaria.classes;
 
 public class ClinicaVeterinaria {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public String CNPJ;
-    public String razaoSocial;
-    public String endereco;
-    public String tefone ;
 
+    private String cnpj;
+    private String razaoSocial;
+    private String endereco;
+    private String tefone;
 
-    
-=======
-    public nome
-=======
+    public String getCnpj() {
+        return cnpj;
+    }
 
->>>>>>> 27114d07e2ea38442ee85a4cec1ca9c8242482ae
-    public String CNPJ;
-    public String nome;
->>>>>>> 45d3d76f890d77965bca3e3a766f4789453776ab
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getRazaoSocial() {
+        return razaoSocial;
+    }
+
+    public void setRazaoSocial(String razaoSocial) {
+        this.razaoSocial = razaoSocial;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getTefone() {
+        return tefone;
+    }
+
+    public void setTefone(String tefone) {
+        this.tefone = tefone;
+    }
+
 }
