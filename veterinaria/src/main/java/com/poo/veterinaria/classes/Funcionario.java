@@ -62,6 +62,7 @@ public class Funcionario {
         this.funcao = funcao;
         this.endereco = endereco;
         this.telefone = telefone;
+        this.matricula = matricula;
     }
 
 }
