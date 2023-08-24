@@ -53,6 +53,15 @@ public class VeterinariaApplication {
 		System.out.println("Telefone:" + func2.getTelefone());
 		System.out.println("_________________________________");
 
+
+/************************************************************************* */
+
+// Dados Pet
+
+
+
+
+
 	}
 
 }

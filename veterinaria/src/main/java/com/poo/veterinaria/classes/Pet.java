@@ -37,6 +37,15 @@ public class Pet {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
+    public Pet(){
+        this.nome = nome;
+        this.especie = especie;
+        this.idade = idade;
+        this.raca = raca;
+        
+    }
+
     // teste
 
 }
