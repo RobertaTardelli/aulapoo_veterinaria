@@ -16,8 +16,7 @@ public class VeterinariaApplication {
 		System.out.println("");
 		System.out.println(" *** DADOS DOS FUNCIONARIOS ***");
 
-		Funcionario func1 = new Funcionario(); // criacao do primeiro funcionario (func1) onde sao inseridos os dados em
-												// cada set.
+		Funcionario func1 = new Funcionario(); // insercao dados func1
 		func1.setNome("Carlos Antonio da Silva");
 		func1.setCpf(1234567800);
 		func1.setFuncao("Atendente");
@@ -25,8 +24,8 @@ public class VeterinariaApplication {
 		func1.setTelefone(988241234);
 		func1.setMatricula(1001);
 
-		Funcionario func2 = new Funcionario(); // criacao do segundo funcionario (func2) onde sao inseridos os dados em
-		// cada set.
+		Funcionario func2 = new Funcionario(); // insercao dados func2
+
 		func2.setNome("Ana Paula Dias");
 		func2.setCpf(1234512345);
 		func2.setFuncao("Gerente");
