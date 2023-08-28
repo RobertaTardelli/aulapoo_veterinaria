@@ -16,21 +16,31 @@ public class VeterinariaApplication {
 		System.out.println("");
 		System.out.println(" *** DADOS DOS FUNCIONARIOS ***");
 
-		Funcionario func1 = new Funcionario(); // insercao dados func1
-		func1.setNome("Carlos Antonio da Silva");
-		func1.setCpf(1234567800);
+
+// CORRIGIR INSERÇÃO DE DADOS!!!!!!!!!!!
+
+
+		Funcionario func1 = new Funcionario()	(0, null, null, null, 0, 0, null, null, 0 // insercao dados func1
+		func1.setId(10)
+		func1.setNome("Carlos Antonio da Silva"),
+		func1.setEndereco("Rua dos bobos,00"),
+		func1.setCpf("1234567800"),
+		func1.setTelefoneFixo(22444123),
+		func1.setTelefoneCel(99882255),
+		func1.setEmail("emailfunc@hotmail.com"));
+		
 		func1.setFuncao("Atendente");
-		func1.setEndereco("Rua dos bobos,00");
-		func1.setTelefone(988241234);
 		func1.setMatricula(1001);
 
 		Funcionario func2 = new Funcionario(); // insercao dados func2
-
+		func2.setId(11);
 		func2.setNome("Ana Paula Dias");
-		func2.setCpf(1234512345);
-		func2.setFuncao("Gerente");
 		func2.setEndereco("Rua dos espertos,00");
-		func2.setTelefone(998245555);
+		func2.setCpf("1234512345");
+		func2.setTelefoneFixo(22441010);
+		func2.setTelefoneCel(99882233);
+		func2.setEmail("emailfunc2@hotmail.com");
+		func2.setFuncao("Gerente");
 		func2.setMatricula(1002);
 
 		// Print func1
