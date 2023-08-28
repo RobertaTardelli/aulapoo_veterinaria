@@ -3,6 +3,7 @@ package com.poo.veterinaria;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.poo.veterinaria.classes.ClinicaVeterinaria;
 import com.poo.veterinaria.classes.Funcionario;
 import com.poo.veterinaria.classes.Pet;
 
@@ -11,6 +12,9 @@ public class VeterinariaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(VeterinariaApplication.class, args);
+
+		System.out.println("");
+		System.out.println(" *** DADOS DOS FUNCIONARIOS ***");
 
 		Funcionario func1 = new Funcionario(); // criacao do primeiro funcionario (func1) onde sao inseridos os dados em
 												// cada set.
@@ -31,7 +35,7 @@ public class VeterinariaApplication {
 		func2.setMatricula(1002);
 
 		// Print func1
-		System.out.println("                                 ");
+
 		System.out.println("_________________________________");
 		System.out.println("Funcionário:" + func1.getNome());
 		System.out.println("Matrícula:" + func1.getMatricula());
@@ -43,7 +47,7 @@ public class VeterinariaApplication {
 		System.out.println("_________________________________");
 
 		// Print func2
-		System.out.println("                                 ");
+
 		System.out.println("_________________________________");
 		System.out.println("Funcionário:" + func2.getNome());
 		System.out.println("Matrícula:" + func2.getMatricula());
@@ -66,6 +70,8 @@ public class VeterinariaApplication {
 		pet1.setIdade(10);
 		pet1.setRaca("RND");
 
+		System.out.println(" *** DADOS DOS PETS ***");
+
 		// Print pet1
 		System.out.println("_________________________________");
 		System.out.println("Pet ID:" + pet1.getId());
@@ -75,8 +81,8 @@ public class VeterinariaApplication {
 		System.out.println("Raça:" + pet1.getRaca());
 		System.out.println("_________________________________");
 
-		Pet pet2 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
-		// cada set.
+		Pet pet2 = new Pet(); // criacao do pet2
+
 		pet2.setId(1002);
 		pet2.setNome("Bolinha");
 		pet2.setEspecie("canino");
@@ -92,8 +98,7 @@ public class VeterinariaApplication {
 		System.out.println("Raça:" + pet2.getRaca());
 		System.out.println("_________________________________");
 
-		Pet pet3 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
-		// cada set.
+		Pet pet3 = new Pet(); // criacao do pet3
 		pet3.setId(1003);
 		pet3.setNome("Peluda");
 		pet3.setEspecie("felino");
@@ -107,6 +112,23 @@ public class VeterinariaApplication {
 		System.out.println("Espécie:" + pet3.getEspecie());
 		System.out.println("Idade:" + pet3.getIdade());
 		System.out.println("Raça:" + pet3.getRaca());
+		System.out.println("_________________________________");
+
+		// Dados Clinica
+
+		ClinicaVeterinaria clinica1 = new ClinicaVeterinaria(); // criacao de clinica
+		clinica1.setCnpj("361526000166");
+		clinica1.setRazaoSocial("PetHouse");
+		clinica1.setEndereco("Rua dos Malandros,00");
+		clinica1.setTefone("2499882255");
+
+		// Print clinica
+		System.out.println("_________________________________");
+		System.out.println(" *** DADOS DA CLINICA ***");
+		System.out.println("Razão Social:" + clinica1.getRazaoSocial());
+		System.out.println("CNPJ:" + clinica1.getCnpj());
+		System.out.println("Telefone:" + clinica1.getTefone());
+		System.out.println("Endereço: " + clinica1.getEndereco());
 		System.out.println("_________________________________");
 
 	}

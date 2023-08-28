@@ -3,6 +3,11 @@ package com.poo.veterinaria.classes;
 public class Pet {
     private int id;
 
+    private String nome;
+    private String raca;
+    private String especie;
+    private int idade;
+
     public int getId() {
         return id;
     }
@@ -10,11 +15,6 @@ public class Pet {
     public void setId(int id) {
         this.id = id;
     }
-
-    private String nome;
-    private String raca;
-    private String especie;
-    private int idade;
 
     public String getNome() {
         return nome;
@@ -56,7 +56,5 @@ public class Pet {
         this.raca = raca;
 
     }
-
-    // teste
 
 }
