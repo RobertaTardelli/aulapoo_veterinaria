@@ -54,29 +54,60 @@ public class VeterinariaApplication {
 		System.out.println("Telefone:" + func2.getTelefone());
 		System.out.println("_________________________________");
 
+		/************************************************************************* */
 
-/************************************************************************* */
+		// Dados Pet
 
-// Dados Pet
-
-Pet pet1 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
-// cada set.
+		Pet pet1 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
+		// cada set.
+		pet1.setId(0001);
 		pet1.setNome("Pretinha");
 		pet1.setEspecie("canino");
 		pet1.setIdade(10);
 		pet1.setRaca("RND");
-	
 
-
-// Print pet		
-System.out.println("                                 ");
+		// Print pet1
 		System.out.println("_________________________________");
+		System.out.println("Pet ID:" + pet1.getId());
 		System.out.println("Nome Pet:" + pet1.getNome());
 		System.out.println("Espécie:" + pet1.getEspecie());
 		System.out.println("Idade:" + pet1.getIdade());
 		System.out.println("Raça:" + pet1.getRaca());
 		System.out.println("_________________________________");
 
+		Pet pet2 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
+		// cada set.
+		pet2.setId(0002);
+		pet2.setNome("Bolinha");
+		pet2.setEspecie("canino");
+		pet2.setIdade(3);
+		pet2.setRaca("Poodle");
+
+		// Print pet2
+		System.out.println("_________________________________");
+		System.out.println("Pet ID:" + pet2.getId());
+		System.out.println("Nome Pet:" + pet2.getNome());
+		System.out.println("Espécie:" + pet2.getEspecie());
+		System.out.println("Idade:" + pet2.getIdade());
+		System.out.println("Raça:" + pet2.getRaca());
+		System.out.println("_________________________________");
+
+		Pet pet3 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
+		// cada set.
+		pet2.setId(0003);
+		pet3.setNome("Peluda");
+		pet3.setEspecie("felino");
+		pet3.setIdade(5);
+		pet3.setRaca("Siamês");
+
+		// Print pet3
+		System.out.println("_________________________________");
+		System.out.println("Pet ID:" + pet3.getId());
+		System.out.println("Nome Pet:" + pet3.getNome());
+		System.out.println("Espécie:" + pet3.getEspecie());
+		System.out.println("Idade:" + pet3.getIdade());
+		System.out.println("Raça:" + pet3.getRaca());
+		System.out.println("_________________________________");
 
 	}
 

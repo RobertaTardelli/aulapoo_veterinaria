@@ -1,6 +1,16 @@
 package com.poo.veterinaria.classes;
 
 public class Pet {
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String nome;
     private String raca;
     private String especie;
@@ -38,12 +48,13 @@ public class Pet {
         this.idade = idade;
     }
 
-    public Pet(){
+    public Pet() {
+        this.id = id;
         this.nome = nome;
         this.especie = especie;
         this.idade = idade;
         this.raca = raca;
-        
+
     }
 
     // teste
