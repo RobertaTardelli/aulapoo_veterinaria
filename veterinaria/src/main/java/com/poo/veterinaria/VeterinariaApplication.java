@@ -60,7 +60,7 @@ public class VeterinariaApplication {
 
 		Pet pet1 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
 		// cada set.
-		pet1.setId(0001);
+		pet1.setId(1000);
 		pet1.setNome("Pretinha");
 		pet1.setEspecie("canino");
 		pet1.setIdade(10);
@@ -77,7 +77,7 @@ public class VeterinariaApplication {
 
 		Pet pet2 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
 		// cada set.
-		pet2.setId(0002);
+		pet2.setId(1002);
 		pet2.setNome("Bolinha");
 		pet2.setEspecie("canino");
 		pet2.setIdade(3);
@@ -94,7 +94,7 @@ public class VeterinariaApplication {
 
 		Pet pet3 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
 		// cada set.
-		pet2.setId(0003);
+		pet3.setId(1003);
 		pet3.setNome("Peluda");
 		pet3.setEspecie("felino");
 		pet3.setIdade(5);
