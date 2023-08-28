@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.poo.veterinaria.classes.Funcionario;
+import com.poo.veterinaria.classes.Pet;
 
 @SpringBootApplication
 public class VeterinariaApplication {
@@ -52,6 +53,30 @@ public class VeterinariaApplication {
 		System.out.println("Endereço:" + func2.getEndereco());
 		System.out.println("Telefone:" + func2.getTelefone());
 		System.out.println("_________________________________");
+
+
+/************************************************************************* */
+
+// Dados Pet
+
+Pet pet1 = new Pet(); // criacao do primeiro pet (pet1) onde sao inseridos os dados em
+// cada set.
+		pet1.setNome("Pretinha");
+		pet1.setEspecie("canino");
+		pet1.setIdade(10);
+		pet1.setRaca("RND");
+	
+
+
+// Print pet		
+System.out.println("                                 ");
+		System.out.println("_________________________________");
+		System.out.println("Nome Pet:" + pet1.getNome());
+		System.out.println("Espécie:" + pet1.getEspecie());
+		System.out.println("Idade:" + pet1.getIdade());
+		System.out.println("Raça:" + pet1.getRaca());
+		System.out.println("_________________________________");
+
 
 	}
 
