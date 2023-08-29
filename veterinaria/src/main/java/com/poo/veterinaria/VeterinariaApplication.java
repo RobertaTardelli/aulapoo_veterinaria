@@ -20,8 +20,8 @@ public class VeterinariaApplication {
 // CORRIGIR INSERÇÃO DE DADOS!!!!!!!!!!!
 
 
-		Funcionario func1 = new Funcionario()	(0, null, null, null, 0, 0, null, null, 0 // insercao dados func1
-		func1.setId(10)
+		Funcionario func1 = new Funcionario (10, "Carlos Antonio da Silva", "Rua dos bobos,00","1234567800", 22444123, 99882255, "emailfunc@hotmail.com", "Atendente", 1001); 
+	/* 	func1.setId(10)
 		func1.setNome("Carlos Antonio da Silva"),
 		func1.setEndereco("Rua dos bobos,00"),
 		func1.setCpf("1234567800"),
@@ -30,10 +30,10 @@ public class VeterinariaApplication {
 		func1.setEmail("emailfunc@hotmail.com"));
 		
 		func1.setFuncao("Atendente");
-		func1.setMatricula(1001);
+		func1.setMatricula(1001);*/
 
-		Funcionario func2 = new Funcionario(); // insercao dados func2
-		func2.setId(11);
+		Funcionario func2 = new Funcionario(11, "Ana Paula Dias", "Rua dos espertos,10","1234512345", 22441010, 99882233, "emailfunc2@hotmail.com", "Gerente", 1002); // insercao dados func2
+		/*func2.setId(11);
 		func2.setNome("Ana Paula Dias");
 		func2.setEndereco("Rua dos espertos,00");
 		func2.setCpf("1234512345");
@@ -41,7 +41,7 @@ public class VeterinariaApplication {
 		func2.setTelefoneCel(99882233);
 		func2.setEmail("emailfunc2@hotmail.com");
 		func2.setFuncao("Gerente");
-		func2.setMatricula(1002);
+		func2.setMatricula(1002);*/
 
 		// Print func1
 
@@ -52,7 +52,8 @@ public class VeterinariaApplication {
 		System.out.println("                                 ");
 		System.out.println("CPF:" + func1.getCpf());
 		System.out.println("Endereço:" + func1.getEndereco());
-		System.out.println("Telefone:" + func1.getTelefone());
+		System.out.println("Telefone Fixo:" + func1.getTelefoneFixo());
+		System.out.println("Telefone Cel:" + func1.getTelefoneCel());
 		System.out.println("_________________________________");
 
 		// Print func2
@@ -64,7 +65,8 @@ public class VeterinariaApplication {
 		System.out.println("                                 ");
 		System.out.println("CPF:" + func2.getCpf());
 		System.out.println("Endereço:" + func2.getEndereco());
-		System.out.println("Telefone:" + func2.getTelefone());
+		System.out.println("Telefone FIxo:" + func2.getTelefoneFixo());
+		System.out.println("Telefone Cel:" + func2.getTelefoneCel());
 		System.out.println("_________________________________");
 
 		/************************************************************************* */
