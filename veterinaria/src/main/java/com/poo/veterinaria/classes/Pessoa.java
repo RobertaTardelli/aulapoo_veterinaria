@@ -1,18 +1,23 @@
 package com.poo.veterinaria.classes;
 
+import com.poo.veterinaria.enums.UnidadeFederal;
+
 public class Pessoa {
     private int id;
     private String nome;
     private String endereco;
+    UnidadeFederal uf; // puxa o enum
     private String cpf;
     private int telefoneFixo;
     private int telefoneCel;
     private String email;
 
-    public Pessoa(int id, String nome, String endereco, String cpf, int telefoneFixo, int telefoneCel, String email) {
+    public Pessoa(int id, String nome, String endereco, UnidadeFederal uf, String cpf, int telefoneFixo,
+            int telefoneCel, String email) {
         this.id = id;
         this.nome = nome;
         this.endereco = endereco;
+        this.uf = uf;
         this.cpf = cpf;
         this.telefoneFixo = telefoneFixo;
         this.telefoneCel = telefoneCel;
@@ -41,6 +46,14 @@ public class Pessoa {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public UnidadeFederal getUf() { // get do enum
+        return uf;
+    }
+
+    public void setUf(UnidadeFederal uf) {
+        this.uf = uf;
     }
 
     public String getCpf() {
