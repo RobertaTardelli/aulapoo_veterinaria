@@ -1,12 +1,23 @@
 package com.poo.veterinaria.classes;
 
+import com.poo.veterinaria.enums.Especie;
+
 public class Pet {
     private int id;
 
     private String nome;
     private String raca;
-    private String especie;
+    Especie especie;
     private int idade;
+
+    public Pet() {
+        this.id = id;
+        this.nome = nome;
+        this.especie = especie;
+        this.idade = idade;
+        this.raca = raca;
+
+    }
 
     public int getId() {
         return id;
@@ -32,11 +43,11 @@ public class Pet {
         this.raca = raca;
     }
 
-    public String getEspecie() {
+    public Especie getEspecie() {
         return especie;
     }
 
-    public void setEspecie(String especie) {
+    public void setEspecie(Especie especie) {
         this.especie = especie;
     }
 
@@ -46,15 +57,6 @@ public class Pet {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    public Pet() {
-        this.id = id;
-        this.nome = nome;
-        this.especie = especie;
-        this.idade = idade;
-        this.raca = raca;
-
     }
 
 }

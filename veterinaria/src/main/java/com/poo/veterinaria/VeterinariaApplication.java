@@ -7,6 +7,7 @@ import com.poo.veterinaria.classes.ClinicaVeterinaria;
 import com.poo.veterinaria.classes.Funcionario;
 import com.poo.veterinaria.classes.Pet;
 import com.poo.veterinaria.classes.Tutor;
+import com.poo.veterinaria.enums.Especie;
 import com.poo.veterinaria.enums.UnidadeFederal;
 
 @SpringBootApplication
@@ -62,7 +63,7 @@ public class VeterinariaApplication {
 		// cada set.
 		pet1.setId(1000);
 		pet1.setNome("Pretinha");
-		pet1.setEspecie("canino");
+		pet1.setEspecie(Especie.CANINO);
 		pet1.setIdade(10);
 		pet1.setRaca("RND");
 
@@ -81,7 +82,7 @@ public class VeterinariaApplication {
 
 		pet2.setId(1002);
 		pet2.setNome("Bolinha");
-		pet2.setEspecie("canino");
+		pet2.setEspecie(Especie.CANINO);
 		pet2.setIdade(3);
 		pet2.setRaca("Poodle");
 
@@ -97,7 +98,7 @@ public class VeterinariaApplication {
 		Pet pet3 = new Pet(); // criacao do pet3
 		pet3.setId(1003);
 		pet3.setNome("Peluda");
-		pet3.setEspecie("felino");
+		pet3.setEspecie(Especie.FELINO);
 		pet3.setIdade(5);
 		pet3.setRaca("Siamês");
 
