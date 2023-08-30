@@ -102,6 +102,8 @@ public class VeterinariaApplication {
 		pet3.setIdade(5);
 		pet3.setRaca("Siamês");
 
+		// teste
+
 		// Print pet3
 		System.out.println("_________________________________");
 		System.out.println("Pet ID:" + pet3.getId());
