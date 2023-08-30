@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.poo.veterinaria.classes.ClinicaVeterinaria;
 import com.poo.veterinaria.classes.Funcionario;
 import com.poo.veterinaria.classes.Pet;
+import com.poo.veterinaria.classes.Tutor;
 
 @SpringBootApplication
 public class VeterinariaApplication {
@@ -16,32 +17,36 @@ public class VeterinariaApplication {
 		System.out.println("");
 		System.out.println(" *** DADOS DOS FUNCIONARIOS ***");
 
+		// CORRIGIR INSERÇÃO DE DADOS!!!!!!!!!!!
 
-// CORRIGIR INSERÇÃO DE DADOS!!!!!!!!!!!
+		Funcionario func1 = new Funcionario(10, "Carlos Antonio da Silva", "Rua dos bobos,00", "1234567800", 22444123,
+				99882255, "emailfunc@hotmail.com", "Atendente", 1001);
+		/*
+		 * func1.setId(10)
+		 * func1.setNome("Carlos Antonio da Silva"),
+		 * func1.setEndereco("Rua dos bobos,00"),
+		 * func1.setCpf("1234567800"),
+		 * func1.setTelefoneFixo(22444123),
+		 * func1.setTelefoneCel(99882255),
+		 * func1.setEmail("emailfunc@hotmail.com"));
+		 * 
+		 * func1.setFuncao("Atendente");
+		 * func1.setMatricula(1001);
+		 */
 
-
-		Funcionario func1 = new Funcionario (10, "Carlos Antonio da Silva", "Rua dos bobos,00","1234567800", 22444123, 99882255, "emailfunc@hotmail.com", "Atendente", 1001); 
-	/* 	func1.setId(10)
-		func1.setNome("Carlos Antonio da Silva"),
-		func1.setEndereco("Rua dos bobos,00"),
-		func1.setCpf("1234567800"),
-		func1.setTelefoneFixo(22444123),
-		func1.setTelefoneCel(99882255),
-		func1.setEmail("emailfunc@hotmail.com"));
-		
-		func1.setFuncao("Atendente");
-		func1.setMatricula(1001);*/
-
-		Funcionario func2 = new Funcionario(11, "Ana Paula Dias", "Rua dos espertos,10","1234512345", 22441010, 99882233, "emailfunc2@hotmail.com", "Gerente", 1002); // insercao dados func2
-		/*func2.setId(11);
-		func2.setNome("Ana Paula Dias");
-		func2.setEndereco("Rua dos espertos,00");
-		func2.setCpf("1234512345");
-		func2.setTelefoneFixo(22441010);
-		func2.setTelefoneCel(99882233);
-		func2.setEmail("emailfunc2@hotmail.com");
-		func2.setFuncao("Gerente");
-		func2.setMatricula(1002);*/
+		Funcionario func2 = new Funcionario(11, "Ana Paula Dias", "Rua dos espertos,10", "1234512345", 22441010,
+				99882233, "emailfunc2@hotmail.com", "Gerente", 1002); // insercao dados func2
+		/*
+		 * func2.setId(11);
+		 * func2.setNome("Ana Paula Dias");
+		 * func2.setEndereco("Rua dos espertos,00");
+		 * func2.setCpf("1234512345");
+		 * func2.setTelefoneFixo(22441010);
+		 * func2.setTelefoneCel(99882233);
+		 * func2.setEmail("emailfunc2@hotmail.com");
+		 * func2.setFuncao("Gerente");
+		 * func2.setMatricula(1002);
+		 */
 
 		// Print func1
 
@@ -125,6 +130,8 @@ public class VeterinariaApplication {
 		System.out.println("Raça:" + pet3.getRaca());
 		System.out.println("_________________________________");
 
+		/********************************************************************************** */
+
 		// Dados Clinica
 
 		ClinicaVeterinaria clinica1 = new ClinicaVeterinaria(); // criacao de clinica
@@ -140,6 +147,18 @@ public class VeterinariaApplication {
 		System.out.println("CNPJ:" + clinica1.getCnpj());
 		System.out.println("Telefone:" + clinica1.getTefone());
 		System.out.println("Endereço: " + clinica1.getEndereco());
+		System.out.println("_________________________________");
+
+		// Dados Tutor 1
+		Tutor tutor1 = new Tutor(51, "Tutoro Uno", "Rua dos Tutores,00", "1234567800", 22444123, 99882255,
+				"emailtut@hotmail.com");
+
+		System.out.println("_________________________________");
+		System.out.println("Tutor:" + tutor1.getNome());
+		System.out.println("CPF:" + tutor1.getCpf());
+		System.out.println("Endereço:" + tutor1.getEndereco());
+		System.out.println("Telefone FIxo:" + tutor1.getTelefoneFixo());
+		System.out.println("Telefone Cel:" + tutor1.getTelefoneCel());
 		System.out.println("_________________________________");
 
 	}
