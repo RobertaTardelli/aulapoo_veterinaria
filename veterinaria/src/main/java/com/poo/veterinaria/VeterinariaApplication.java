@@ -131,13 +131,15 @@ public class VeterinariaApplication {
 		System.out.println("_________________________________");
 
 		// Dados Tutor 1
-		Tutor tutor1 = new Tutor(51, "Tutoro Uno", "Rua dos Tutores,00", "1234567800", 22444123, 99882255,
+		Tutor tutor1 = new Tutor(51, "Tutoro Uno", "Rua dos Tutores,00", UnidadeFederal.SP, "1234567800", 22444123,
+				99882255,
 				"emailtut@hotmail.com");
 
 		System.out.println("_________________________________");
 		System.out.println("Tutor:" + tutor1.getNome());
 		System.out.println("CPF:" + tutor1.getCpf());
 		System.out.println("Endereço:" + tutor1.getEndereco());
+		System.out.println("Uf :" + tutor1.getUf());
 		System.out.println("Telefone FIxo:" + tutor1.getTelefoneFixo());
 		System.out.println("Telefone Cel:" + tutor1.getTelefoneCel());
 		System.out.println("_________________________________");
