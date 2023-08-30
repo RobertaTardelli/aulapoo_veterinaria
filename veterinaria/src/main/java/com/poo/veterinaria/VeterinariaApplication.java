@@ -7,6 +7,9 @@ import com.poo.veterinaria.classes.ClinicaVeterinaria;
 import com.poo.veterinaria.enums.Funcao;
 import com.poo.veterinaria.classes.Funcionario;
 import com.poo.veterinaria.classes.Pet;
+import com.poo.veterinaria.classes.Tutor;
+import com.poo.veterinaria.enums.Especie;
+import com.poo.veterinaria.enums.UnidadeFederal;
 
 @SpringBootApplication
 public class VeterinariaApplication {
@@ -17,6 +20,15 @@ public class VeterinariaApplication {
 		System.out.println("");
 		System.out.println(" *** DADOS DOS FUNCIONARIOS ***");
 
+<<<<<<< HEAD
+		Funcionario func1 = new Funcionario(10, "Carlos Antonio da Silva", "Rua dos bobos,00", UnidadeFederal.RJ,
+				"1234567800", 22444123,
+				99882255, "emailfunc@hotmail.com", "Atendente", 1001);
+
+		Funcionario func2 = new Funcionario(11, "Ana Paula Dias", "Rua dos espertos,10", UnidadeFederal.MG,
+				"1234512345", 22441010,
+				99882233, "emailfunc2@hotmail.com", "Gerente", 1002); // insercao dados func2
+=======
 		Funcionario func1 = new Funcionario(); // insercao dados func1
 		func1.setNome("Carlos Antonio da Silva");
 		func1.setCpf(1234567800);
@@ -33,6 +45,7 @@ public class VeterinariaApplication {
 		func2.setEndereco("Rua dos espertos,00");
 		func2.setTelefone(998245555);
 		func2.setMatricula(1002);
+>>>>>>> 27e36cba270c584e3126b0f03eab4d1ff85b8a1d
 
 		// Print func1
 
@@ -43,7 +56,9 @@ public class VeterinariaApplication {
 		System.out.println("                                 ");
 		System.out.println("CPF:" + func1.getCpf());
 		System.out.println("Endereço:" + func1.getEndereco());
-		System.out.println("Telefone:" + func1.getTelefone());
+		System.out.println("UF: " + func1.getUf());
+		System.out.println("Telefone Fixo:" + func1.getTelefoneFixo());
+		System.out.println("Telefone Cel:" + func1.getTelefoneCel());
 		System.out.println("_________________________________");
 
 		// Print func2
@@ -55,7 +70,9 @@ public class VeterinariaApplication {
 		System.out.println("                                 ");
 		System.out.println("CPF:" + func2.getCpf());
 		System.out.println("Endereço:" + func2.getEndereco());
-		System.out.println("Telefone:" + func2.getTelefone());
+		System.out.println("UF: " + func2.getUf());
+		System.out.println("Telefone FIxo:" + func2.getTelefoneFixo());
+		System.out.println("Telefone Cel:" + func2.getTelefoneCel());
 		System.out.println("_________________________________");
 
 		/************************************************************************* */
@@ -66,7 +83,7 @@ public class VeterinariaApplication {
 		// cada set.
 		pet1.setId(1000);
 		pet1.setNome("Pretinha");
-		pet1.setEspecie("canino");
+		pet1.setEspecie(Especie.CANINO);
 		pet1.setIdade(10);
 		pet1.setRaca("RND");
 
@@ -85,7 +102,7 @@ public class VeterinariaApplication {
 
 		pet2.setId(1002);
 		pet2.setNome("Bolinha");
-		pet2.setEspecie("canino");
+		pet2.setEspecie(Especie.CANINO);
 		pet2.setIdade(3);
 		pet2.setRaca("Poodle");
 
@@ -101,9 +118,11 @@ public class VeterinariaApplication {
 		Pet pet3 = new Pet(); // criacao do pet3
 		pet3.setId(1003);
 		pet3.setNome("Peluda");
-		pet3.setEspecie("felino");
+		pet3.setEspecie(Especie.FELINO);
 		pet3.setIdade(5);
 		pet3.setRaca("Siamês");
+
+		// teste
 
 		// Print pet3
 		System.out.println("_________________________________");
@@ -113,6 +132,8 @@ public class VeterinariaApplication {
 		System.out.println("Idade:" + pet3.getIdade());
 		System.out.println("Raça:" + pet3.getRaca());
 		System.out.println("_________________________________");
+
+		/********************************************************************************** */
 
 		// Dados Clinica
 
@@ -129,6 +150,20 @@ public class VeterinariaApplication {
 		System.out.println("CNPJ:" + clinica1.getCnpj());
 		System.out.println("Telefone:" + clinica1.getTefone());
 		System.out.println("Endereço: " + clinica1.getEndereco());
+		System.out.println("_________________________________");
+
+		// Dados Tutor 1
+		Tutor tutor1 = new Tutor(51, "Tutoro Uno", "Rua dos Tutores,00", UnidadeFederal.SP, "1234567800", 22444123,
+				99882255,
+				"emailtut@hotmail.com");
+
+		System.out.println("_________________________________");
+		System.out.println("Tutor:" + tutor1.getNome());
+		System.out.println("CPF:" + tutor1.getCpf());
+		System.out.println("Endereço:" + tutor1.getEndereco());
+		System.out.println("Uf :" + tutor1.getUf());
+		System.out.println("Telefone FIxo:" + tutor1.getTelefoneFixo());
+		System.out.println("Telefone Cel:" + tutor1.getTelefoneCel());
 		System.out.println("_________________________________");
 
 	}
