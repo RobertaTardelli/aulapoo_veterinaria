@@ -7,6 +7,7 @@ import com.poo.veterinaria.classes.ClinicaVeterinaria;
 import com.poo.veterinaria.classes.Funcionario;
 import com.poo.veterinaria.classes.Pet;
 import com.poo.veterinaria.classes.Tutor;
+import com.poo.veterinaria.enums.UnidadeFederal;
 
 @SpringBootApplication
 public class VeterinariaApplication {
@@ -17,36 +18,13 @@ public class VeterinariaApplication {
 		System.out.println("");
 		System.out.println(" *** DADOS DOS FUNCIONARIOS ***");
 
-		// CORRIGIR INSERÇÃO DE DADOS!!!!!!!!!!!
-
-		Funcionario func1 = new Funcionario(10, "Carlos Antonio da Silva", "Rua dos bobos,00", "1234567800", 22444123,
+		Funcionario func1 = new Funcionario(10, "Carlos Antonio da Silva", "Rua dos bobos,00", UnidadeFederal.RJ,
+				"1234567800", 22444123,
 				99882255, "emailfunc@hotmail.com", "Atendente", 1001);
-		/*
-		 * func1.setId(10)
-		 * func1.setNome("Carlos Antonio da Silva"),
-		 * func1.setEndereco("Rua dos bobos,00"),
-		 * func1.setCpf("1234567800"),
-		 * func1.setTelefoneFixo(22444123),
-		 * func1.setTelefoneCel(99882255),
-		 * func1.setEmail("emailfunc@hotmail.com"));
-		 * 
-		 * func1.setFuncao("Atendente");
-		 * func1.setMatricula(1001);
-		 */
 
-		Funcionario func2 = new Funcionario(11, "Ana Paula Dias", "Rua dos espertos,10", "1234512345", 22441010,
+		Funcionario func2 = new Funcionario(11, "Ana Paula Dias", "Rua dos espertos,10", UnidadeFederal.MG,
+				"1234512345", 22441010,
 				99882233, "emailfunc2@hotmail.com", "Gerente", 1002); // insercao dados func2
-		/*
-		 * func2.setId(11);
-		 * func2.setNome("Ana Paula Dias");
-		 * func2.setEndereco("Rua dos espertos,00");
-		 * func2.setCpf("1234512345");
-		 * func2.setTelefoneFixo(22441010);
-		 * func2.setTelefoneCel(99882233);
-		 * func2.setEmail("emailfunc2@hotmail.com");
-		 * func2.setFuncao("Gerente");
-		 * func2.setMatricula(1002);
-		 */
 
 		// Print func1
 
@@ -57,6 +35,7 @@ public class VeterinariaApplication {
 		System.out.println("                                 ");
 		System.out.println("CPF:" + func1.getCpf());
 		System.out.println("Endereço:" + func1.getEndereco());
+		System.out.println("UF: " + func1.getUf());
 		System.out.println("Telefone Fixo:" + func1.getTelefoneFixo());
 		System.out.println("Telefone Cel:" + func1.getTelefoneCel());
 		System.out.println("_________________________________");
@@ -70,6 +49,7 @@ public class VeterinariaApplication {
 		System.out.println("                                 ");
 		System.out.println("CPF:" + func2.getCpf());
 		System.out.println("Endereço:" + func2.getEndereco());
+		System.out.println("UF: " + func2.getUf());
 		System.out.println("Telefone FIxo:" + func2.getTelefoneFixo());
 		System.out.println("Telefone Cel:" + func2.getTelefoneCel());
 		System.out.println("_________________________________");
