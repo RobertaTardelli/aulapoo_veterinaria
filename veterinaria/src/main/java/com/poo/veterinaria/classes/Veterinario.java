@@ -1,5 +1,7 @@
 package com.poo.veterinaria.classes;
 
+import com.poo.veterinaria.enums.Funcao;
+
 public class Veterinario extends Funcionario {
      private String crmv;
 
