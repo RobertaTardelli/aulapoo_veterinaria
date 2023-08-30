@@ -1,5 +1,7 @@
 package com.poo.veterinaria.classes;
 
+import com.poo.veterinaria.enums.Funcao;
+
 public class Funcionario {
     private String nome;
     private int cpf;

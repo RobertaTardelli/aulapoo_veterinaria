@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.poo.veterinaria.classes.ClinicaVeterinaria;
-import com.poo.veterinaria.classes.Funcao;
+import com.poo.veterinaria.enums.Funcao;
 import com.poo.veterinaria.classes.Funcionario;
 import com.poo.veterinaria.classes.Pet;
 
