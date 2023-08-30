@@ -3,10 +3,26 @@ package com.poo.veterinaria.classes;
 public class Funcionario {
     private String nome;
     private int cpf;
-    private String funcao;
+    private Funcao funcao;
     private String endereco;
     private int telefone;
     private int matricula;
+
+    // contrutor do funcionario
+    // atributos serao preenchidos ao criar o funcionario no application
+
+    public Funcionario(String nome, int cpf, Funcao funcao, String endereco, int telefone, int matricula) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.funcao = funcao;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.matricula = matricula;
+    }
+
+    public Funcionario (){
+        //Construtor vazio para testar diferentes formas de criar funcionário
+    }
 
     public int getMatricula() {
         return matricula;
@@ -32,11 +48,11 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
-    public String getFuncao() {
+    public Funcao getFuncao() {
         return funcao;
     }
 
-    public void setFuncao(String funcao) {
+    public void setFuncao(Funcao funcao) {
         this.funcao = funcao;
     }
 
@@ -54,15 +70,6 @@ public class Funcionario {
 
     public void setTelefone(int telefone) {
         this.telefone = telefone;
-    }
-
-    public Funcionario() { // contrutor do funcionario
-        this.nome = nome; // atributos serao preenchidos ao criar o funcionario no application
-        this.cpf = cpf;
-        this.funcao = funcao;
-        this.endereco = endereco;
-        this.telefone = telefone;
-        this.matricula = matricula;
     }
 
 }

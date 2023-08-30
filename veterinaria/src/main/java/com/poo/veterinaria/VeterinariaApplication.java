@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.poo.veterinaria.classes.ClinicaVeterinaria;
+import com.poo.veterinaria.classes.Funcao;
 import com.poo.veterinaria.classes.Funcionario;
 import com.poo.veterinaria.classes.Pet;
 
@@ -19,7 +20,7 @@ public class VeterinariaApplication {
 		Funcionario func1 = new Funcionario(); // insercao dados func1
 		func1.setNome("Carlos Antonio da Silva");
 		func1.setCpf(1234567800);
-		func1.setFuncao("Atendente");
+		func1.setFuncao(Funcao.ATENDENTE);
 		func1.setEndereco("Rua dos bobos,00");
 		func1.setTelefone(988241234);
 		func1.setMatricula(1001);
@@ -28,7 +29,7 @@ public class VeterinariaApplication {
 
 		func2.setNome("Ana Paula Dias");
 		func2.setCpf(1234512345);
-		func2.setFuncao("Gerente");
+		func2.setFuncao(Funcao.GERENTE);
 		func2.setEndereco("Rua dos espertos,00");
 		func2.setTelefone(998245555);
 		func2.setMatricula(1002);
