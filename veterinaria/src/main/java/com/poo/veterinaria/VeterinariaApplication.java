@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.poo.veterinaria.classes.ClinicaVeterinaria;
+import com.poo.veterinaria.enums.Funcao;
 import com.poo.veterinaria.classes.Funcionario;
 import com.poo.veterinaria.classes.Pet;
 import com.poo.veterinaria.classes.Tutor;
@@ -19,6 +20,7 @@ public class VeterinariaApplication {
 		System.out.println("");
 		System.out.println(" *** DADOS DOS FUNCIONARIOS ***");
 
+<<<<<<< HEAD
 		Funcionario func1 = new Funcionario(10, "Carlos Antonio da Silva", "Rua dos bobos,00", UnidadeFederal.RJ,
 				"1234567800", 22444123,
 				99882255, "emailfunc@hotmail.com", "Atendente", 1001);
@@ -26,6 +28,24 @@ public class VeterinariaApplication {
 		Funcionario func2 = new Funcionario(11, "Ana Paula Dias", "Rua dos espertos,10", UnidadeFederal.MG,
 				"1234512345", 22441010,
 				99882233, "emailfunc2@hotmail.com", "Gerente", 1002); // insercao dados func2
+=======
+		Funcionario func1 = new Funcionario(); // insercao dados func1
+		func1.setNome("Carlos Antonio da Silva");
+		func1.setCpf(1234567800);
+		func1.setFuncao(Funcao.ATENDENTE);
+		func1.setEndereco("Rua dos bobos,00");
+		func1.setTelefone(988241234);
+		func1.setMatricula(1001);
+
+		Funcionario func2 = new Funcionario(); // insercao dados func2
+
+		func2.setNome("Ana Paula Dias");
+		func2.setCpf(1234512345);
+		func2.setFuncao(Funcao.GERENTE);
+		func2.setEndereco("Rua dos espertos,00");
+		func2.setTelefone(998245555);
+		func2.setMatricula(1002);
+>>>>>>> 27e36cba270c584e3126b0f03eab4d1ff85b8a1d
 
 		// Print func1
 
