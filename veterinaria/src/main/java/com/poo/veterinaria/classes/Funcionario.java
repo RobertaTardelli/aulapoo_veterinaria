@@ -1,10 +1,13 @@
 package com.poo.veterinaria.classes;
 
+import com.poo.veterinaria.enums.Funcao;
 import com.poo.veterinaria.enums.UnidadeFederal;
 
 public class Funcionario extends Pessoa {
 
     private String funcao;
+
+
     private int matricula;
 
     // puxa UnidadeFederal de Pessoa - lança no construtor e no super
@@ -20,7 +23,7 @@ public class Funcionario extends Pessoa {
         return funcao;
     }
 
-    public void setFuncao(Funcao funcao) {
+    public void setFuncao(String funcao) {
         this.funcao = funcao;
     }
 
