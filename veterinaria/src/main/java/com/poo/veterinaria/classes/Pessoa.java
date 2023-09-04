@@ -7,7 +7,7 @@ public class Pessoa implements ListarPessoa {
     private int id;
     private String nome;
     private String endereco;
-    UnidadeFederal uf; // puxa o enum
+    static UnidadeFederal uf; // puxa o enum
     private String cpf;
     private int telefoneFixo;
     private int telefoneCel;
@@ -90,13 +90,12 @@ public class Pessoa implements ListarPessoa {
     }
 
     @Override
-    public void acharPessoaPorNome (String nomeProcurado){
-        if (nomeProcurado.equals(nome)){
+    public void acharPessoaPorNome(String nomeProcurado) {
+        if (nomeProcurado.equals(nome)) {
             System.out.println("O Cliente está devidamente cadastrado no sistema.");
         } else {
             System.out.println("Cliente não encontrado no sistema.");
         }
-
 
     }
 

@@ -12,7 +12,6 @@ import com.poo.veterinaria.classes.Veterinario;
 import com.poo.veterinaria.enums.Especie;
 import com.poo.veterinaria.enums.UnidadeFederal;
 import com.poo.veterinaria.enums.Funcao;
-import com.poo.veterinaria.classes.Veterinario;
 
 @SpringBootApplication
 public class VeterinariaApplication {
@@ -26,7 +25,7 @@ public class VeterinariaApplication {
 		Funcionario func1 = new Funcionario(10, "Carlos Antonio da Silva", "Rua dos bobos,00", UnidadeFederal.RJ,
 				"1234567800", 22444123, 99882255, "emailfunc@hotmail.com", Funcao.ATENDENTE, 1001);
 
-				func1.acharPessoaPorNome("Carlos Antonio da");
+		func1.acharPessoaPorNome("Carlos Antonio da");
 
 		Veterinario func2 = new Veterinario(11, "Ana Paula Dias", "Rua dos espertos,10", UnidadeFederal.MG,
 				"1234512345", 22441010,
@@ -152,7 +151,5 @@ public class VeterinariaApplication {
 		System.out.println("_________________________________");
 
 	}
-
-	
 
 }
