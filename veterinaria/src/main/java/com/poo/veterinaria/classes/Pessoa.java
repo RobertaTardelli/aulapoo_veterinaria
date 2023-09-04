@@ -1,8 +1,9 @@
 package com.poo.veterinaria.classes;
 
 import com.poo.veterinaria.enums.UnidadeFederal;
+import com.poo.veterinaria.interfaces.ListarPessoa;
 
-public class Pessoa {
+public class Pessoa implements ListarPessoa {
     private int id;
     private String nome;
     private String endereco;
@@ -86,6 +87,17 @@ public class Pessoa {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public void acharPessoaPorNome (String nomeProcurado){
+        if (nomeProcurado.equals(nome)){
+            System.out.println("O Cliente está devidamente cadastrado no sistema.");
+        } else {
+            System.out.println("Cliente não encontrado no sistema.");
+        }
+
+
     }
 
 }

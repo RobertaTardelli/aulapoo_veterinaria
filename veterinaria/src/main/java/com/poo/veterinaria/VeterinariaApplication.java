@@ -26,6 +26,8 @@ public class VeterinariaApplication {
 		Funcionario func1 = new Funcionario(10, "Carlos Antonio da Silva", "Rua dos bobos,00", UnidadeFederal.RJ,
 				"1234567800", 22444123, 99882255, "emailfunc@hotmail.com", Funcao.ATENDENTE, 1001);
 
+				func1.acharPessoaPorNome("Carlos Antonio da");
+
 		Veterinario func2 = new Veterinario(11, "Ana Paula Dias", "Rua dos espertos,10", UnidadeFederal.MG,
 				"1234512345", 22441010,
 				99882233, "emailfunc2@hotmail.com", Funcao.VETERINÁRIO, 1002, "5050"); // insercao dados func2
@@ -150,5 +152,7 @@ public class VeterinariaApplication {
 		System.out.println("_________________________________");
 
 	}
+
+	
 
 }
