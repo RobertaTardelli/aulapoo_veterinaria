@@ -7,13 +7,15 @@ public class ClinicaVeterinaria {
     private String razaoSocial;
     private Endereco endereco;
     private Contato contato;
-    public ClinicaVeterinaria(int id, String cnpj, String razaoSocial, Endereco endereco, Contato contato) {
-        this.id = id;
+    
+    
+    public ClinicaVeterinaria( String cnpj, String razaoSocial) {
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;
-        this.endereco = endereco;
-        this.contato = contato;
+                      
     }
+  
+   
     public int getId() {
         return id;
     }
@@ -37,12 +39,13 @@ public class ClinicaVeterinaria {
     }
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
-    }
+    } 
     public Contato getContato() {
         return contato;
     }
     public void setContato(Contato contato) {
         this.contato = contato;
     }
+   
     
 }

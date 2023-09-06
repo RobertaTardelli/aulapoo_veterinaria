@@ -21,7 +21,7 @@ public class Endereco {
         this.cep = cep;
     }
 
-    public String getLogradouro() {
+       public String getLogradouro() {
         return logradouro;
     }
 
@@ -76,4 +76,11 @@ public class Endereco {
     public void setCep(int cep) {
         this.cep = cep;
     }
+
+    Endereco end1 = new Endereco("Rua do Imperador", 125,
+     " ", "Centro", "Petrópolis", UnidadeFederal.RJ , 252525000);
+
+     Endereco end2 = new Endereco("Rua dos Bobos", 0, " ",
+      "Canção Infantil", "Contos de Fadas", UnidadeFederal.AC, 655656588);
+
 }

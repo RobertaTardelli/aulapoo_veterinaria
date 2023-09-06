@@ -1,13 +1,20 @@
 package com.poo.veterinaria.classes;
 
-import com.poo.veterinaria.interfaces.ListarPessoa;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Pessoa implements ListarPessoa {
+import com.poo.veterinaria.interfaces.Cadastro;
+
+public class Pessoa implements Cadastro {
     private int id;
     private String nome;
     private Endereco endereco;
     private String cpf;
     private Contato contato;
+    private static ArrayList <Pessoa> listaPessoas = new ArrayList<>();
+    private Scanner scannerString = new Scanner(System.in);
+    private Scanner scannerInt = new Scanner(System.in);
+
 
     public Pessoa(int id, String nome, Endereco endereco, String cpf, Contato contato) {
         this.id = id;
@@ -15,6 +22,16 @@ public class Pessoa implements ListarPessoa {
         this.endereco = endereco;
         this.cpf = cpf;
         this.contato = contato;
+    }
+
+    public Pessoa (String nome, String cpf){
+        this.nome = nome;
+        this.cpf = cpf;
+        
+    }
+
+    public Pessoa (){
+                
     }
 
     public int getId() {
@@ -57,15 +74,40 @@ public class Pessoa implements ListarPessoa {
         this.contato = contato;
     }
 
-    @Override
-    public void acharPessoaPorNome (String nomeProcurado){
-        if (nomeProcurado.equals(nome)){
-            System.out.println("O Cliente está devidamente cadastrado no sistema.");
-        } else {
-            System.out.println("Cliente não encontrado no sistema.");
-        }
+     public static ArrayList<Pessoa> getListaPessoas() {
+        return listaPessoas;
+    }
 
+   
+
+    @Override
+    public void criarCadastro(){
+        System.out.println("Informe o nome:");
+        nome = scannerString.nextLine();
+        System.out.println("Informe o CPF:");
+        cpf = scannerString.nextLine();
+
+        Pessoa novaPessoa = new Pessoa(nome, cpf);
+        listaPessoas.add(novaPessoa);
 
     }
+
+    @Override
+    public void mostrarCadastro() {
+       
+    }
+
+    @Override
+    public void listarCadastros() {
+        for(int i = 0; i < Pessoa.getListaPessoas().size(); i++){
+            System.out.println(Pessoa.getListaPessoas().get(i).getNome());
+            System.out.println(Pessoa.getListaPessoas().get(i).getCpf());
+
+        }
+    }
+
+   
+
+
 
 }
