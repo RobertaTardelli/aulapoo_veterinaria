@@ -1,7 +1,6 @@
 package com.poo.veterinaria.classes;
 
 import com.poo.veterinaria.enums.Funcao;
-import com.poo.veterinaria.enums.UnidadeFederal;
 
 public class Funcionario extends Pessoa {
 
