@@ -5,38 +5,22 @@ import com.poo.veterinaria.enums.UnidadeFederal;
 
 public class Funcionario extends Pessoa {
 
-   Funcao funcao;
+   private Funcao funcao;
+   private int matricula;
 
-
-
-
-    private int matricula;
-
-    // puxa UnidadeFederal de Pessoa - lança no construtor e no super
-    public Funcionario(int id, String nome, String endereco, UnidadeFederal uf, String cpf, int telefoneFixo,
-            int telefoneCel,
-            String email, Funcao funcao,  int matricula) {
-        super(id, nome, endereco, uf, cpf, telefoneFixo, telefoneCel, email);
+    public Funcionario(int id, String nome, Endereco endereco, String cpf, Contato contato, Funcao funcao, int matricula) {
+        super(id, nome, endereco, cpf, contato);
         this.funcao = funcao;
         this.matricula = matricula;
     }
 
-
-        public Funcao getFuncao() {
-    return funcao;
-}
-
-
-public void setFuncao(Funcao funcao) {
-    this.funcao = funcao;
-}
+    public Funcao getFuncao() {
+        return funcao;
+    }
 
     public int getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(int matricula) {
-        this.matricula = matricula;
-    }
-
+    
 }

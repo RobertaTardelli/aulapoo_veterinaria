@@ -1,28 +1,20 @@
 package com.poo.veterinaria.classes;
 
-import com.poo.veterinaria.enums.UnidadeFederal;
 import com.poo.veterinaria.interfaces.ListarPessoa;
 
 public class Pessoa implements ListarPessoa {
     private int id;
     private String nome;
-    private String endereco;
-    UnidadeFederal uf; // puxa o enum
+    private Endereco endereco;
     private String cpf;
-    private int telefoneFixo;
-    private int telefoneCel;
-    private String email;
+    private Contato contato;
 
-    public Pessoa(int id, String nome, String endereco, UnidadeFederal uf, String cpf, int telefoneFixo,
-            int telefoneCel, String email) {
+    public Pessoa(int id, String nome, Endereco endereco, String cpf, Contato contato) {
         this.id = id;
         this.nome = nome;
         this.endereco = endereco;
-        this.uf = uf;
         this.cpf = cpf;
-        this.telefoneFixo = telefoneFixo;
-        this.telefoneCel = telefoneCel;
-        this.email = email;
+        this.contato = contato;
     }
 
     public int getId() {
@@ -41,20 +33,12 @@ public class Pessoa implements ListarPessoa {
         this.nome = nome;
     }
 
-    public String getEndereco() {
+    public Endereco getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(String endereco) {
+    public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
-    }
-
-    public UnidadeFederal getUf() { // get do enum
-        return uf;
-    }
-
-    public void setUf(UnidadeFederal uf) {
-        this.uf = uf;
     }
 
     public String getCpf() {
@@ -65,28 +49,12 @@ public class Pessoa implements ListarPessoa {
         this.cpf = cpf;
     }
 
-    public int getTelefoneFixo() {
-        return telefoneFixo;
+    public Contato getContato() {
+        return contato;
     }
 
-    public void setTelefoneFixo(int telefoneFixo) {
-        this.telefoneFixo = telefoneFixo;
-    }
-
-    public int getTelefoneCel() {
-        return telefoneCel;
-    }
-
-    public void setTelefoneCel(int telefoneCel) {
-        this.telefoneCel = telefoneCel;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setContato(Contato contato) {
+        this.contato = contato;
     }
 
     @Override

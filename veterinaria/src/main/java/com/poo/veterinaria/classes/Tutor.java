@@ -1,13 +1,17 @@
 package com.poo.veterinaria.classes;
-
-import com.poo.veterinaria.enums.UnidadeFederal;
-
 public class Tutor extends Pessoa {
+    private int numerodeMatricula;
 
-    public Tutor(int id, String nome, String endereco, UnidadeFederal uf, String cpf, int telefoneFixo, int telefoneCel,
-            String email) {
-        super(id, nome, endereco, uf, cpf, telefoneFixo, telefoneCel, email);
-
+    public Tutor(int id, String nome, Endereco endereco, String cpf, Contato contato, int numerodeMatricula) {
+        super(id, nome, endereco, cpf, contato);
+        this.numerodeMatricula = numerodeMatricula;
     }
 
+    public int getNumerodeMatricula() {
+        return numerodeMatricula;
+    }
+
+    public void setNumerodeMatricula(int numerodeMatricula) {
+        this.numerodeMatricula = numerodeMatricula;
+    }
 }

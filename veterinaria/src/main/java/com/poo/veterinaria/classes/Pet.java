@@ -7,16 +7,17 @@ public class Pet {
 
     private String nome;
     private String raca;
-    Especie especie;
+    private Especie especie;
     private int idade;
+    private Tutor tutor;
 
-    public Pet() {
+    public Pet(int id, String nome, String raca, Especie especie, int idade, Tutor tutor) {
         this.id = id;
         this.nome = nome;
+        this.raca = raca;
         this.especie = especie;
         this.idade = idade;
-        this.raca = raca;
-
+        this.tutor = tutor;
     }
 
     public int getId() {
@@ -59,4 +60,11 @@ public class Pet {
         this.idade = idade;
     }
 
+    public Tutor getTutor() {
+        return tutor;
+    }
+
+    public void setTutor(Tutor tutor) {
+        this.tutor = tutor;
+    }
 }
